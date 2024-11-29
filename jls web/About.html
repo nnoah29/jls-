@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+</head>
+<body>
+<!-- Scroll indicator -->
+<div id="scroll-indicator">
+    <svg width="50" height="50" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" stroke="#767676" stroke-width="5" fill="none"/>
+        <circle id="progress-circle" cx="50" cy="50" r="45" stroke="#f26722" stroke-width="5" fill="none" stroke-dasharray="283" stroke-dashoffset="283"/>
+    </svg>
+</div>
+
+<!-- Header -->
+<header class="navbar navbar-expand-lg bg-primary-custom">
+    <div class="container">
+        <a data-aos="fade-right" class="navbar-brand text-white ms-2 pt-0" href="index.html#">
+            <img src="assets/image/logo.png" style="width: 110px" alt="" />
+        </a>
+
+        <!-- Button Burger Menu -->
+        <button class="navbar-toggler border-0" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas-background"></div>
+
+        <!-- Sidebar for mobile -->
+        <nav class="offcanvas-menu" id="navbarNav">
+            <div class="offcanvas-header border-0">
+                <!-- <h5 class="offcanvas-title text-black">Title</h5> -->
+                <img
+                        class="offcanvas-title"
+                        src="assets/image/logo.png"
+                        style="width: 130px"
+                        alt=""
+                />
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <ul class="navbar-nav mx-3">
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
+                            style="font-size: 12px"
+                            href="index.html"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        Home
+                    </a>
+                    <ul
+                            class="dropdown-menu bg-primary-custom"
+                            style="border: none"
+                            aria-labelledby="navbarDropdown"
+                    >
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="index.html"
+                            >Home</a>
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="Home2.html"
+                            >Home 2</a>
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="Home3.html"
+                            >Home 3</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="LandingPage.html"
+                            >Landing Page</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
+                            style="font-size: 12px"
+                            href="index.html#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        Pages
+                    </a>
+                    <ul
+                            class="dropdown-menu bg-primary-custom"
+                            style="border: none"
+                            aria-labelledby="navbarDropdown"
+                    >
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="About.html"
+                            >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="Pricing.html"
+                            >Pricing</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="Single-work.html"
+                            >Single Work</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="Reviews.html"
+                            >Reviews</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="Blog.html"
+                            >Blog</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="Post.html"
+                            >Post</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item font-krona-one text-uppercase text-white"
+                                    style="font-size: 12px"
+                                    href="404.html"
+                            >404</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
+                            style="font-size: 12px"
+                            href="Services.html"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        Services
+                    </a>
+                    <ul
+                            class="dropdown-menu bg-primary-custom"
+                            style="border: none"
+                            aria-labelledby="navbarDropdown"
+                    >
+                        <div>
+                            <h6
+                                    class="text-white font-krona-one fw-light"
+                                    style="font-size: 12px"
+                            >
+                                BRANDING
+                            </h6>
+                            <a class="dropdown-item text-white" href="index.html#">Design</a>
+                            <a class="dropdown-item text-white" href="index.html#">Graphic</a>
+                            <a class="dropdown-item text-white" href="index.html#">Ideas</a>
+                            <a class="dropdown-item text-white" href="index.html#">Brainstorm</a>
+                        </div>
+                        <div>
+                            <h6
+                                    class="text-white font-krona-one fw-light mt-3"
+                                    style="font-size: 12px"
+                            >
+                                MARKETING
+                            </h6>
+                            <a class="dropdown-item text-white" href="index.html#">Email</a>
+                            <a class="dropdown-item text-white" href="index.html#">Content</a>
+                            <a class="dropdown-item text-white" href="index.html#">Digital</a>
+                            <a class="dropdown-item text-white" href="index.html#">All-in-One</a>
+                        </div>
+                        <div>
+                            <h6
+                                    class="text-white font-krona-one fw-light mt-3"
+                                    style="font-size: 12px"
+                            >
+                                STRATEGY
+                            </h6>
+                            <a class="dropdown-item text-white" href="index.html#">Social Media</a>
+                            <a class="dropdown-item text-white" href="index.html#">Search Engine</a>
+                            <a class="dropdown-item text-white" href="index.html#">Social Ads</a>
+                            <a class="dropdown-item text-white" href="index.html#">Affiliate</a>
+                        </div>
+                        <div>
+                            <h6
+                                    class="text-white font-krona-one fw-light mt-3"
+                                    style="font-size: 12px"
+                            >
+                                WEBSITE
+                            </h6>
+                            <a class="dropdown-item text-white" href="index.html#">Web Design</a>
+                            <a class="dropdown-item text-white" href="index.html#">Maintenance</a>
+                            <a class="dropdown-item text-white" href="index.html#">Copywriting</a>
+                            <a class="dropdown-item text-white" href="index.html#">Media</a>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                            class="nav-link font-krona-one text-uppercase text-white"
+                            style="font-size: 12px"
+                            href="OurWorks.html"
+                    >our works</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link font-krona-one text-uppercase text-white"
+                            style="font-size: 12px"
+                            href="Contact.html"
+                    >contact</a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Navbar for large screens -->
+        <nav class="d-none d-lg-block py-3 transition-fade-down">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown" style="z-index: 100">
+                    <a class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4" href="index.html" id="navbarDropdownLg" role="button" aria-expanded="false" style="font-size: 12px">
+                        <p class="mb-0">Acceuil</p>
+                    </a>
+                </li>
+                <li class="nav-item dropdown" style="z-index: 100">
+                    <a class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4" href="index.html#" id="navbarDropdownLg" role="button" aria-expanded="false" style="font-size: 12px">
+                        <p class="mb-0">Pages</p>
+                        <img src="assets/icons/IconArrowDown.png" alt="Dropdown Icon" class="dropdown-icon"/>
+                    </a>
+                    <ul class="dropdown-menu bg-primary-custom" style="z-index: 100" aria-labelledby="navbarDropdownLg">
+                        <li><a class="dropdown-item text-white font-krona-one text-uppercase" style="font-size: 12px; z-index: 100" href="About.html">A propos</a></li>
+                        <li><a class="dropdown-item text-white font-krona-one text-uppercase" style="font-size: 12px; z-index: 100" href="Reviews.html-">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4" href="Services.html-" id="servicesDropdown" role="button" aria-expanded="false" style="font-size: 12px">
+                        <p class="mb-0">Services</p>
+                        <img src="assets/icons/IconArrowDown.png" alt="Dropdown Icon" class="dropdown-icon"/>
+                    </a>
+                    <div class="dropdown-menu-services p-3 dropdown-services" aria-labelledby="servicesDropdown">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <h6 class="dropdown-header font-krona-one fw-light">
+                                    Impression
+                                </h6>
+                                <a class="dropdown-item" href="index.html#">Impression numérique</a>
+                                <a class="dropdown-item" href="index.html#">Impression PVC</a>
+                                <a class="dropdown-item" href="index.html#">Photocopie</a>
+                                <a class="dropdown-item" href="index.html#">Impression de brochures</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="dropdown-header font-krona-one fw-light">
+                                    Signalétique
+                                </h6>
+                                <a class="dropdown-item" href="index.html#">Signalétique intérieure</a>
+                                <a class="dropdown-item" href="index.html#">Signalétique extérieure</a>
+                                <a class="dropdown-item" href="index.html#">Vitrines et autocollants</a>
+                                <a class="dropdown-item" href="index.html#">Panneaux personnalisés</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="dropdown-header font-krona-one fw-light">
+                                    Création Graphique
+                                </h6>
+                                <a class="dropdown-item" href="index.html#">Calendrier</a>
+                                <a class="dropdown-item" href="index.html#">Agenda</a>
+                                <a class="dropdown-item" href="index.html#">Cartes de Visites</a>
+                                <a class="dropdown-item" href="index.html#">Carte de Mariage</a>
+                                <a class="dropdown-item" href="index.html#">Dépliant</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white font-krona-one text-uppercase me-4" style="font-size: 12px" href="OurWorks.html-">Nos Travaux </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white font-krona-one text-uppercase" style="font-size: 12px" href="Contact.html">Contact</a
+                    >
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- Section 3 - About Us -->
+<section class="bg-primary-custom">
+    <div class="bg-secondary-opacity-custom custom-padding">
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- Col 1 -->
+                <div class="col-xs-12 col-md-4">
+                    <h4 data-aos="fade-right" class="text-uppercase font-krona-one text-white mb-4" style="font-size: 12px">
+                        Qui sommes-nous ?
+                    </h4>
+                    <div data-aos="fade-up">
+                        <h1 class="text-uppercase font-krona-one border-text h2-text mb-0">creative</h1>
+                        <h1 class="text-uppercase font-krona-one border-text h2-text mb-0">agency</h1>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="col-xs-12 col-md-8 mt-4 mt-md-0">
+                    <p data-aos="fade-up" class="text-white sub-text-medium">
+                        En tant qu’acteurs locaux dédiés à l’innovation et à la satisfaction de nos clients, nous offrons une approche personnalisée, où vos besoins et vos ambitions sont au cœur de notre démarche. Que vous soyez une entreprise cherchant à renforcer son image de marque ou un particulier souhaitant des créations uniques, nous sommes là pour concrétiser vos visions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="text-white px-2 px-lg-0 custom-height-about">
+    <div class="container overflow-hidden">
+        <!-- Row -->
+        <div class="row align-items-center custom-height-about">
+            <!-- Col 1 -->
+            <div class="col-lg-6 position-relative display-image-about box-image-approach">
+                <div data-aos="fade-up" class="image-position-approach-3">
+                    <img src="assets/image/18.webp" style="max-width: 100%; max-height: 100%" class="position-absolute position-image-3" alt=""/>
+                </div>
+                <div data-aos="fade-right" class="image-position-approach-4">
+                    <img src="assets/image/2.jpg" style="
+                  max-width: 100%;
+                  max-height: 100%;
+                  background-size: cover;
+                " class="position-absolute position-image-4" alt=""/>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="col-lg-6 padding-left-c margin-short-c">
+                <h2 data-aos="fade-up" class="text-uppercase font-krona-one h2-text">
+                    Notre histoire
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    Quam nulla porttitor massa id neque aliquam vestibulum morbi
+                    blandit. Proin fermentum leo vel orci porta non pulvinar. Orci ac
+                    auctor augue mauris augue neque. Elit at imperdiet dui accumsan.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    Morbi leo urna molestie at elementum. Arcu non sodales neque
+                    sodales ut etiam sit amet. At auctor urna nunc id cursus metus
+                    aliquam. Feugiat scelerisque varius morbi enim nunc faucibus.
+                </p>
+
+                <div class="mt-5">
+                    <a data-aos="fade-up" data-aos-delay="700" href="Services.html" class="btn-color button-padding text-uppercase font-krona-one text-black text-decoration-none button-text">
+                        <span class="me-2">Services</span>
+                        <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-hero text-white px-2 px-lg-0">
+    <div class="color-cover custom-padding">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-5">
+                    <h2 data-aos="fade-up" class="font-krona-one h2-text">EXPERTISE</h2>
+                    <p data-aos="fade-up" data-aos-delay="200" class="section-subtitle mb-4">
+                        Que vous cherchiez à dynamiser votre communication ou à produire des objets uniques, notre expertise est au service de votre vision.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="400" class="progress-container">
+                        <div class="progress-item">
+                            <span class="font-krona-one fw-light h6-text text-uppercase">Conception graphique</span>
+                            <div class="progress">
+                                <div class="progress-bar font-krona-one fw-light" data-target="100%" style="width: 0">0</div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span class="font-krona-one fw-light h6-text text-uppercase">Objets personnalisés</span>
+                            <div class="progress">
+                                <div class="progress-bar font-krona-one fw-light" data-target="75%" style="width: 0">0</div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span class="font-krona-one fw-light h6-text text-uppercase">Impression Numérique</span>
+                            <div class="progress">
+                                <div class="progress-bar font-krona-one fw-light" data-target="90%" style="width: 0">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/image/26-1.webp" class="d-block w-100" alt="Image 1"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="what-we-do-section bg-primary-custom custom-padding">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h2 class="h2-text font-krona-one text-uppercase">Nos services</h2>
+            </div>
+            <div class="col-md-6">
+                <p data-aos="fade-up" class="text-light">
+                    Nous proposons une gamme de services pensée pour répondre à vos besoins, que vous soyez une entreprise, une organisation ou un particulier.
+                </p>
+                <a data-aos="fade-up" data-aos-delay="300" href="Services.html" class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text mt-3">
+                    <span class="me-2 text-uppercase">Tous les services</span>
+                    <i class="fa-solid fa-arrow-right" style="color: #f26722"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="row text-center g-4 mt-4">
+            <div data-aos="fade-up" class="col-md-4">
+                <div class="icon-box text-md-start">
+                    <i class="fa-regular fa-lightbulb" style="color: #f26722"></i>
+                    <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
+                        Création Graphique
+                    </h5>
+                    <p class="text-light pe-md-4 mt-3">
+                        Des designs sur mesure pour donner vie à votre identité et marquer les esprits.
+                    </p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="col-md-4">
+                <div class="icon-box text-md-start">
+                    <i class="fa-regular fa-star" style="color: #f26722"></i>
+                    <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
+                        Signalétique
+                    </h5>
+                    <p class="text-light pe-md-4 mt-3">
+                        Des supports visuels percutants pour orienter et communiquer efficacement.
+                    </p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" class="col-md-4">
+                <div class="icon-box text-md-start">
+                    <i class="fa-regular fa-heart" style="color: #f26722"></i>
+                    <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
+                        Impression
+                    </h5>
+                    <p class="text-light pe-md-4 mt-3">
+                        Des impressions de qualité supérieure pour sublimer vos projets sur tous supports.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Footer -->
+<footer class="footer-section py-5">
+    <div class="container">
+        <!-- Row -->
+        <div class="row mb-5">
+            <!-- Col 1 30-->
+            <div class="col-lg-4 mb-5 mb-md-0 pe-lg-5">
+                <img src="assets/image/logo.png" style="width: 110px" alt="" />
+                <p data-aos="fade-up" data-aos-delay="200" class="text-light my-3">
+                    Nous venons de loin, pour un long chemin ensemble.
+                </p>
+                <div data-aos="fade-up" data-aos-delay="300" class="d-flex gap-3 mt-5">
+                    <a href="index.html#"><i class="fa-brands fa-facebook" style="color: #f26722"></i></a>
+                    <a href="index.html#"><i class="fa-brands fa-twitter" style="color: #f26722"></i></a>
+                    <a href="index.html#"><i class="fa-brands fa-youtube" style="color: #f26722"></i></a>
+                </div>
+            </div>
+            <!-- Col 2 30-->
+            <div class="col-lg-4 mb-5 mb-md-0 pe-lg-5">
+                <h5 data-aos="fade-up" class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light">OFFICE</h5>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-light mt-4 mb-3">
+                    BENIN, Cotonou, Kouhounou.<br />Juste à coté de CorisBank
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-light mt-5 mb-2">
+                    <i class="fa-regular fa-envelope" style="color: #f26722"></i>
+                    jls_services2@yahoo.fr
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-light">
+                    <i class="fa-solid fa-phone" style="color: #f26722"></i>
+                    +229 97 96 34 62
+                </p>
+            </div>
+            <!-- Col 3 20-->
+            <div class="col-lg-2 mb-5 mb-md-0">
+                <h5 data-aos="fade-up" class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light">MENU</h5>
+                <ul class="list-unstyled mt-4">
+                    <li data-aos="fade-up" data-aos-delay="200" class="mb-3"><a href="index.html#" class="text-light text-decoration-none">Services</a></li>
+                    <li data-aos="fade-up" data-aos-delay="300" class="mb-3"><a href="index.html#" class="text-light text-decoration-none">Features</a></li>
+                    <li data-aos="fade-up" data-aos-delay="400" class="mb-3"><a href="index.html#" class="text-light text-decoration-none">Pricing</a></li>
+                    <li data-aos="fade-up" data-aos-delay="500" class="mb-3"><a href="index.html#" class="text-light text-decoration-none">Testimonials</a></li>
+                </ul>
+            </div>
+            <!-- Col 4 20-->
+            <div class="col-lg-2">
+                <h5 data-aos="fade-up" class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light">LINKS</h5>
+                <ul class="list-unstyled mt-4">
+                    <li data-aos="fade-up" data-aos-delay="200" class="mb-3"><a href="index.html#" class="text-light text-decoration-none">About Us</a></li>
+                    <li data-aos="fade-up" data-aos-delay="300" class="mb-3"><a href="index.html#" class="text-light text-decoration-none">Contact</a></li>
+                    <li data-aos="fade-up" data-aos-delay="400" class="mb-3"><a href="index.html#" class="text-light text-decoration-none">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-4" />
+        <div class="footer-bottom d-flex justify-content-between flex-column flex-md-row pt-2 pb-5">
+            <div data-aos="fade-up">
+                <span>Powered by<a href="#" class="text-decoration-none"><span class="text-secondary-color">Nnoah29.</span></a></span>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="mt-3 mt-lg-0">
+                <a href="index.html#" class="text-secondary-color text-decoration-none me-2 mx-lg-2">Privacy Policy</a>
+                <span>|</span>
+                <a href="index.html#" class="text-secondary-color text-decoration-none mx-2">Our Terms</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="dist/js/progressBar.js"></script>
+<script src="dist/js/navbar.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>
